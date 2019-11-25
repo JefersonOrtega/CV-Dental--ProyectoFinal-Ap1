@@ -20,8 +20,6 @@ namespace ConsultorioOdontologico.BLL
             paciente.Balance += entity.Monto;
             _contexto.Entry(paciente).State = EntityState.Modified;
 
-
-
             return base.Guardar(entity);
         }
         public override bool Modificar(Procedimientos entity)

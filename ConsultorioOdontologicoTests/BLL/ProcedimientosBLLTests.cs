@@ -12,6 +12,7 @@ namespace ConsultorioOdontologico.BLL.Tests
     [TestClass()]
     public class ProcedimientosBLLTests
     {
+       
         [TestMethod()]
         public void GuardarTest()
         {
@@ -19,6 +20,7 @@ namespace ConsultorioOdontologico.BLL.Tests
             ProcedimientosBLL procedimientosBLL = new ProcedimientosBLL();
             Procedimientos procedimiento = new Procedimientos();
             List<ProcedimientosDetalles> detalle = new List<ProcedimientosDetalles>();
+
             procedimiento.ProcedimientoId = 0;
             procedimiento.PacienteId = 1;
             procedimiento.TipoProcedimientoId = 1;
@@ -28,7 +30,6 @@ namespace ConsultorioOdontologico.BLL.Tests
             procedimiento.UsuarioId = 1;
 
             procedimiento.ProcedimientoDetalle = detalle;
-
             paso = procedimientosBLL.Guardar(procedimiento);
 
             Assert.AreEqual(paso, true);
