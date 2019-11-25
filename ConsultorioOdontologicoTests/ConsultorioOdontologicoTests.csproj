@@ -64,7 +64,9 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="BLL\CobrosBLLTests.cs" />
     <Compile Include="BLL\ProcedimientosBLLTests.cs" />
+    <Compile Include="BLL\RepositorioBaseTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
