@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ConsultorioOdontologico.BLL
 {
-    class CobrosBLL : RepositorioBase<Cobros>
+    public class CobrosBLL : RepositorioBase<Cobros>
     {
         public override bool Guardar(Cobros entity)
         {

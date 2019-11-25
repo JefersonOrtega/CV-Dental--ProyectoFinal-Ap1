@@ -42,7 +42,6 @@
             this.CitaIdNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.RemoverFilaButton = new System.Windows.Forms.Button();
             this.DetalleDataGridView = new System.Windows.Forms.DataGridView();
             this.CProcedimientoId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CCitaId = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,14 +53,14 @@
             this.PacienteComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.UsuarioLabel = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.BuscarProcedimientoButton = new System.Windows.Forms.Button();
             this.BuscarCitasButton = new System.Windows.Forms.Button();
             this.EliminarButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
-            this.NombrePacientetextBox = new System.Windows.Forms.TextBox();
-            this.UsuarioLabel = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.RemoverFilaButton = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CitaIdNumericUpDown)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -198,19 +197,6 @@
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             // 
-            // RemoverFilaButton
-            // 
-            this.RemoverFilaButton.Image = global::ConsultorioOdontologico.Properties.Resources.iconfinder_Delete_14932791;
-            this.RemoverFilaButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RemoverFilaButton.Location = new System.Drawing.Point(7, 236);
-            this.RemoverFilaButton.Name = "RemoverFilaButton";
-            this.RemoverFilaButton.Size = new System.Drawing.Size(117, 30);
-            this.RemoverFilaButton.TabIndex = 4;
-            this.RemoverFilaButton.Text = "Remover Fila";
-            this.RemoverFilaButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RemoverFilaButton.UseVisualStyleBackColor = true;
-            this.RemoverFilaButton.Click += new System.EventHandler(this.RemoverFilaButton_Click);
-            // 
             // DetalleDataGridView
             // 
             this.DetalleDataGridView.AllowUserToAddRows = false;
@@ -276,9 +262,9 @@
             this.PacienteComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PacienteComboBox.Enabled = false;
             this.PacienteComboBox.FormattingEnabled = true;
-            this.PacienteComboBox.Location = new System.Drawing.Point(506, 88);
+            this.PacienteComboBox.Location = new System.Drawing.Point(125, 88);
             this.PacienteComboBox.Name = "PacienteComboBox";
-            this.PacienteComboBox.Size = new System.Drawing.Size(153, 21);
+            this.PacienteComboBox.Size = new System.Drawing.Size(534, 21);
             this.PacienteComboBox.TabIndex = 27;
             this.PacienteComboBox.SelectedIndexChanged += new System.EventHandler(this.PacienteComboBox_SelectedIndexChanged);
             // 
@@ -294,6 +280,26 @@
             // MyErrorProvider
             // 
             this.MyErrorProvider.ContainerControl = this;
+            // 
+            // UsuarioLabel
+            // 
+            this.UsuarioLabel.AutoSize = true;
+            this.UsuarioLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsuarioLabel.Location = new System.Drawing.Point(362, 626);
+            this.UsuarioLabel.Name = "UsuarioLabel";
+            this.UsuarioLabel.Size = new System.Drawing.Size(16, 15);
+            this.UsuarioLabel.TabIndex = 55;
+            this.UsuarioLabel.Text = "...";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(286, 625);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(70, 16);
+            this.label12.TabIndex = 54;
+            this.label12.Text = "Usuario: ";
             // 
             // BuscarProcedimientoButton
             // 
@@ -360,33 +366,18 @@
             this.NuevoButton.UseVisualStyleBackColor = true;
             this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
-            // NombrePacientetextBox
+            // RemoverFilaButton
             // 
-            this.NombrePacientetextBox.Location = new System.Drawing.Point(125, 88);
-            this.NombrePacientetextBox.Name = "NombrePacientetextBox";
-            this.NombrePacientetextBox.ReadOnly = true;
-            this.NombrePacientetextBox.Size = new System.Drawing.Size(299, 20);
-            this.NombrePacientetextBox.TabIndex = 44;
-            // 
-            // UsuarioLabel
-            // 
-            this.UsuarioLabel.AutoSize = true;
-            this.UsuarioLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsuarioLabel.Location = new System.Drawing.Point(362, 626);
-            this.UsuarioLabel.Name = "UsuarioLabel";
-            this.UsuarioLabel.Size = new System.Drawing.Size(16, 15);
-            this.UsuarioLabel.TabIndex = 55;
-            this.UsuarioLabel.Text = "...";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(286, 625);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(70, 16);
-            this.label12.TabIndex = 54;
-            this.label12.Text = "Usuario: ";
+            this.RemoverFilaButton.Image = global::ConsultorioOdontologico.Properties.Resources.iconfinder_Delete_14932791;
+            this.RemoverFilaButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RemoverFilaButton.Location = new System.Drawing.Point(7, 236);
+            this.RemoverFilaButton.Name = "RemoverFilaButton";
+            this.RemoverFilaButton.Size = new System.Drawing.Size(117, 30);
+            this.RemoverFilaButton.TabIndex = 4;
+            this.RemoverFilaButton.Text = "Remover Fila";
+            this.RemoverFilaButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RemoverFilaButton.UseVisualStyleBackColor = true;
+            this.RemoverFilaButton.Click += new System.EventHandler(this.RemoverFilaButton_Click);
             // 
             // rProcedimientos
             // 
@@ -395,7 +386,6 @@
             this.ClientSize = new System.Drawing.Size(682, 650);
             this.Controls.Add(this.UsuarioLabel);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.NombrePacientetextBox);
             this.Controls.Add(this.BuscarProcedimientoButton);
             this.Controls.Add(this.BuscarCitasButton);
             this.Controls.Add(this.EliminarButton);
@@ -450,7 +440,6 @@
         private System.Windows.Forms.Button BuscarProcedimientoButton;
         private System.Windows.Forms.Button BuscarCitasButton;
         private System.Windows.Forms.Button RemoverFilaButton;
-        private System.Windows.Forms.TextBox NombrePacientetextBox;
         private System.Windows.Forms.DataGridViewTextBoxColumn CProcedimientoId;
         private System.Windows.Forms.DataGridViewTextBoxColumn CCitaId;
         private System.Windows.Forms.DataGridViewTextBoxColumn CPaciente;

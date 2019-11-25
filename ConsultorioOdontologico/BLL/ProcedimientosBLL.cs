@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ConsultorioOdontologico.BLL
 {
-    class ProcedimientosBLL : RepositorioBase<Procedimientos>
+    public class ProcedimientosBLL : RepositorioBase<Procedimientos>
     {
         public override bool Guardar(Procedimientos entity)
         {

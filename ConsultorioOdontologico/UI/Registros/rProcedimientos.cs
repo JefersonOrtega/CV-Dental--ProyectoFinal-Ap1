@@ -92,7 +92,6 @@ namespace ConsultorioOdontologico.UI.Registros
             MyErrorProvider.Clear();
             ProcedimientoIdNumericUpDown.Value = 0;
             CitaIdNumericUpDown.Value = 0;
-            NombrePacientetextBox.Text = string.Empty;
             PacienteComboBox.Text = string.Empty;
             TipoProcedimientoComboBox.SelectedIndex=-1;
             EstadoComboBox.Text = string.Empty;
@@ -141,7 +140,6 @@ namespace ConsultorioOdontologico.UI.Registros
             RepositorioBase<Pacientes> repositorio = new RepositorioBase<Pacientes>();
 
             ProcedimientoIdNumericUpDown.Value = procedimiento.ProcedimientoId;
-            NombrePacientetextBox.Text = repositorio.Buscar(procedimiento.PacienteId).Nombres;
             PacienteComboBox.SelectedValue = procedimiento.PacienteId;
             TipoProcedimientoComboBox.SelectedValue = procedimiento.TipoProcedimientoId;
             EstadoComboBox.Text = procedimiento.Estado;
@@ -287,26 +285,6 @@ namespace ConsultorioOdontologico.UI.Registros
 
         private void PacienteComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MyErrorProvider.Clear();
-
-            RepositorioBase<Citas> repositorio = new RepositorioBase<Citas>();
-            var Lista = repositorio.GetList(p => p.PacienteId == PacienteComboBox.SelectedIndex+1 && (p.Estado.ToLower()=="programada" || p.Estado.ToLower() == "reprogramada"));
-
-            if (Lista.Count == 0)
-            {
-                MyErrorProvider.Clear();
-                CitaIdNumericUpDown.Value = 0;
-                MyErrorProvider.SetError(PacienteComboBox, "Este paciente no tiene citas asignadas");
-                PacienteComboBox.Focus();
-                return;
-            }
-
-
-            foreach (var item in Lista)
-            {
-                CitaIdNumericUpDown.Value = item.CitaId;
-                break;
-            }
             
 
             
@@ -381,7 +359,6 @@ namespace ConsultorioOdontologico.UI.Registros
                     if (cita.Estado.ToLower() == "programada" || cita.Estado.ToLower() == "reprogramada")
                     {
                         PacienteComboBox.Text = repositorioPacientes.Buscar(cita.PacienteId).Nombres;
-                        NombrePacientetextBox.Text = repositorioPacientes.Buscar(cita.PacienteId).Nombres;
                     }
                     else
                     {
