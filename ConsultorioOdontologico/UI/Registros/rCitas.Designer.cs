@@ -55,6 +55,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(14, 21);
             this.label1.Name = "label1";
@@ -64,6 +65,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(14, 96);
             this.label2.Name = "label2";
@@ -73,6 +75,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(13, 123);
             this.label3.Name = "label3";
@@ -82,6 +85,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(14, 62);
             this.label4.Name = "label4";
@@ -91,6 +95,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(14, 146);
             this.label6.Name = "label6";
@@ -100,6 +105,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(14, 182);
             this.label7.Name = "label7";
@@ -121,7 +127,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FechaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.FechaDateTimePicker.Location = new System.Drawing.Point(92, 91);
+            this.FechaDateTimePicker.Location = new System.Drawing.Point(89, 91);
             this.FechaDateTimePicker.Name = "FechaDateTimePicker";
             this.FechaDateTimePicker.Size = new System.Drawing.Size(185, 20);
             this.FechaDateTimePicker.TabIndex = 9;
@@ -133,7 +139,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.HoraDateTimePicker.CustomFormat = "hh:mm tt";
             this.HoraDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.HoraDateTimePicker.Location = new System.Drawing.Point(92, 117);
+            this.HoraDateTimePicker.Location = new System.Drawing.Point(89, 117);
             this.HoraDateTimePicker.Name = "HoraDateTimePicker";
             this.HoraDateTimePicker.Size = new System.Drawing.Size(185, 20);
             this.HoraDateTimePicker.TabIndex = 10;
@@ -143,7 +149,7 @@
             this.ObservacionTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ObservacionTextBox.Location = new System.Drawing.Point(92, 170);
+            this.ObservacionTextBox.Location = new System.Drawing.Point(89, 170);
             this.ObservacionTextBox.Multiline = true;
             this.ObservacionTextBox.Name = "ObservacionTextBox";
             this.ObservacionTextBox.Size = new System.Drawing.Size(185, 39);
@@ -161,7 +167,7 @@
             "Vencida",
             "Reprogramada",
             "Cumplida"});
-            this.EstadoComboBox.Location = new System.Drawing.Point(92, 143);
+            this.EstadoComboBox.Location = new System.Drawing.Point(89, 143);
             this.EstadoComboBox.Name = "EstadoComboBox";
             this.EstadoComboBox.Size = new System.Drawing.Size(185, 21);
             this.EstadoComboBox.TabIndex = 44;
@@ -181,13 +187,11 @@
             // 
             // AgregarPacienteButton
             // 
-            this.AgregarPacienteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AgregarPacienteButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.AgregarPacienteButton.FlatAppearance.BorderSize = 0;
             this.AgregarPacienteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AgregarPacienteButton.Image = global::ConsultorioOdontologico.Properties.Resources.icons8_añadir_48;
-            this.AgregarPacienteButton.Location = new System.Drawing.Point(234, 46);
+            this.AgregarPacienteButton.Location = new System.Drawing.Point(231, 46);
             this.AgregarPacienteButton.Name = "AgregarPacienteButton";
             this.AgregarPacienteButton.Size = new System.Drawing.Size(48, 43);
             this.AgregarPacienteButton.TabIndex = 51;
@@ -196,13 +200,11 @@
             // 
             // EliminarButton
             // 
-            this.EliminarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.EliminarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.EliminarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EliminarButton.Image = global::ConsultorioOdontologico.Properties.Resources.BotonEliminar1;
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.EliminarButton.Location = new System.Drawing.Point(200, 235);
+            this.EliminarButton.Location = new System.Drawing.Point(197, 235);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(77, 62);
             this.EliminarButton.TabIndex = 47;
@@ -241,13 +243,11 @@
             // 
             // BuscarCitasButton
             // 
-            this.BuscarCitasButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuscarCitasButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.BuscarCitasButton.FlatAppearance.BorderSize = 0;
             this.BuscarCitasButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BuscarCitasButton.Image = global::ConsultorioOdontologico.Properties.Resources.icons8_google_web_search_100_1_;
-            this.BuscarCitasButton.Location = new System.Drawing.Point(240, 9);
+            this.BuscarCitasButton.Location = new System.Drawing.Point(237, 9);
             this.BuscarCitasButton.Name = "BuscarCitasButton";
             this.BuscarCitasButton.Size = new System.Drawing.Size(37, 35);
             this.BuscarCitasButton.TabIndex = 38;
@@ -278,7 +278,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(309, 343);
+            this.ClientSize = new System.Drawing.Size(306, 343);
             this.Controls.Add(this.UsuarioLabel);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.AgregarPacienteButton);

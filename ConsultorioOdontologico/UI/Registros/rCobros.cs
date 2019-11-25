@@ -234,5 +234,28 @@ namespace ConsultorioOdontologico.UI.Registros
         {
 
         }
+
+        private void BuscarButton_Click(object sender, EventArgs e)
+        {
+            int id;
+            int.TryParse(CobroIdnumericUpDown.Text, out id);
+
+            Cobros cobro = new Cobros();
+
+            RepositorioBase<Cobros> repositorio = new RepositorioBase<Cobros>();
+
+            Limpiar();
+
+            cobro = repositorio.Buscar(id);
+
+            if (cobro != null)
+            {
+                LlenarCampos(cobro);
+            }
+            else
+            {
+                MessageBox.Show("Registro No encontrado");
+            }
+        }
     }
 }
