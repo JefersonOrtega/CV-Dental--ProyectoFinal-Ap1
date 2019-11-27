@@ -63,18 +63,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\CobrosBLL.cs" />
-    <Compile Include="BLL\IRepository.cs" />
-    <Compile Include="BLL\ProcedimientosBLL.cs" />
-    <Compile Include="BLL\RepositorioBase.cs" />
-    <Compile Include="DAL\Contexto.cs" />
-    <Compile Include="Entidades\Citas.cs" />
-    <Compile Include="Entidades\Cobros.cs" />
-    <Compile Include="Entidades\Pacientes.cs" />
-    <Compile Include="Entidades\Procedimientos.cs" />
-    <Compile Include="Entidades\ProcedimientosDetalles.cs" />
-    <Compile Include="Entidades\TiposProcedimientos.cs" />
-    <Compile Include="Entidades\Usuarios.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,6 +197,18 @@
     <Compile Include="UI\Reportes\ProcedimientosReportViewer.Designer.cs">
       <DependentUpon>ProcedimientosReportViewer.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Reportes\ReciboCobroReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Reportes\ReciboCobroReportViewer.Designer.cs">
+      <DependentUpon>ReciboCobroReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Reportes\ReciboCobrosReporte.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReciboCobrosReporte.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UI\Reportes\TiposProcedimientosReporte.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -313,6 +313,13 @@
     <EmbeddedResource Include="UI\Reportes\ProcedimientosReportViewer.resx">
       <DependentUpon>ProcedimientosReportViewer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Reportes\ReciboCobroReportViewer.resx">
+      <DependentUpon>ReciboCobroReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Reportes\ReciboCobrosReporte.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReciboCobrosReporte.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Reportes\TiposProcedimientosReporte.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>TiposProcedimientosReporte.cs</LastGenOutput>
@@ -400,8 +407,21 @@
     <None Include="Resources\icons8-añadir-48.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DAL\Scripts\ConsultorioBD.sql" />
     <None Include="Resources\logo3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{e8f32c44-6a21-4760-8841-8008b9ef660e}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{2025f4db-78aa-43ff-9275-823aeb9ac358}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{b50218cb-4144-4286-80b5-9bfc7fe5c019}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

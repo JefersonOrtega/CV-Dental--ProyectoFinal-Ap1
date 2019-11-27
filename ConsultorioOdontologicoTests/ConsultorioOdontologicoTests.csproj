@@ -74,9 +74,21 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{e8f32c44-6a21-4760-8841-8008b9ef660e}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ConsultorioOdontologico\ConsultorioOdontologico.csproj">
       <Project>{F8A424A1-F1E8-4651-975B-91811D3D2FC3}</Project>
       <Name>ConsultorioOdontologico</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{2025f4db-78aa-43ff-9275-823aeb9ac358}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{b50218cb-4144-4286-80b5-9bfc7fe5c019}</Project>
+      <Name>Entidades</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

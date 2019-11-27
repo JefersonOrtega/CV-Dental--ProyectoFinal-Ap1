@@ -46,6 +46,7 @@
             // 
             // CriterioTextBox
             // 
+            this.CriterioTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.CriterioTextBox.Location = new System.Drawing.Point(328, 25);
             this.CriterioTextBox.Name = "CriterioTextBox";
             this.CriterioTextBox.Size = new System.Drawing.Size(205, 20);
@@ -53,6 +54,7 @@
             // 
             // FiltrarComboBox
             // 
+            this.FiltrarComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FiltrarComboBox.FormattingEnabled = true;
             this.FiltrarComboBox.Items.AddRange(new object[] {
             "Todo",
@@ -69,6 +71,7 @@
             // 
             // HastaDateTimePicker
             // 
+            this.HastaDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.HastaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.HastaDateTimePicker.Location = new System.Drawing.Point(115, 25);
             this.HastaDateTimePicker.Name = "HastaDateTimePicker";
@@ -77,6 +80,7 @@
             // 
             // DesdeDateTimePicker
             // 
+            this.DesdeDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.DesdeDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DesdeDateTimePicker.Location = new System.Drawing.Point(21, 25);
             this.DesdeDateTimePicker.Name = "DesdeDateTimePicker";
@@ -85,6 +89,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(325, 9);
             this.label4.Name = "label4";
@@ -94,6 +99,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(209, 9);
             this.label3.Name = "label3";
@@ -103,6 +109,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(112, 9);
             this.label2.Name = "label2";
@@ -112,6 +119,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(21, 9);
             this.label1.Name = "label1";
@@ -121,6 +129,9 @@
             // 
             // ConsultaDataGridView
             // 
+            this.ConsultaDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ConsultaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ConsultaDataGridView.Location = new System.Drawing.Point(10, 49);
             this.ConsultaDataGridView.Name = "ConsultaDataGridView";
@@ -129,6 +140,7 @@
             // 
             // ConsultarButton
             // 
+            this.ConsultarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ConsultarButton.Image = ((System.Drawing.Image)(resources.GetObject("ConsultarButton.Image")));
             this.ConsultarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ConsultarButton.Location = new System.Drawing.Point(556, 18);
@@ -142,6 +154,7 @@
             // 
             // UsuariosComboBox
             // 
+            this.UsuariosComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UsuariosComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.UsuariosComboBox.FormattingEnabled = true;
             this.UsuariosComboBox.Location = new System.Drawing.Point(334, 24);
@@ -152,6 +165,7 @@
             // 
             // ImprimirButton
             // 
+            this.ImprimirButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ImprimirButton.Image = global::ConsultorioOdontologico.Properties.Resources.icons8_imprimir_50;
             this.ImprimirButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.ImprimirButton.Location = new System.Drawing.Point(565, 444);

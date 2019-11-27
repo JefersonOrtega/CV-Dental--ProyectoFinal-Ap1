@@ -37,7 +37,7 @@
             this.NombreTextBox = new System.Windows.Forms.TextBox();
             this.DescripcionTextBox = new System.Windows.Forms.TextBox();
             this.PrecioNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BuscarButton = new System.Windows.Forms.Button();
             this.EliminarButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
@@ -87,28 +87,36 @@
             // 
             // ProcedimientoIdNumericUpDown
             // 
+            this.ProcedimientoIdNumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ProcedimientoIdNumericUpDown.Location = new System.Drawing.Point(133, 11);
             this.ProcedimientoIdNumericUpDown.Name = "ProcedimientoIdNumericUpDown";
-            this.ProcedimientoIdNumericUpDown.Size = new System.Drawing.Size(85, 20);
+            this.ProcedimientoIdNumericUpDown.Size = new System.Drawing.Size(103, 20);
             this.ProcedimientoIdNumericUpDown.TabIndex = 4;
             // 
             // NombreTextBox
             // 
+            this.NombreTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.NombreTextBox.Location = new System.Drawing.Point(133, 44);
             this.NombreTextBox.Name = "NombreTextBox";
-            this.NombreTextBox.Size = new System.Drawing.Size(144, 20);
+            this.NombreTextBox.Size = new System.Drawing.Size(152, 20);
             this.NombreTextBox.TabIndex = 5;
             // 
             // DescripcionTextBox
             // 
+            this.DescripcionTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DescripcionTextBox.Location = new System.Drawing.Point(133, 70);
             this.DescripcionTextBox.Multiline = true;
             this.DescripcionTextBox.Name = "DescripcionTextBox";
-            this.DescripcionTextBox.Size = new System.Drawing.Size(144, 35);
+            this.DescripcionTextBox.Size = new System.Drawing.Size(152, 35);
             this.DescripcionTextBox.TabIndex = 6;
             // 
             // PrecioNumericUpDown
             // 
+            this.PrecioNumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PrecioNumericUpDown.DecimalPlaces = 2;
             this.PrecioNumericUpDown.Location = new System.Drawing.Point(132, 111);
             this.PrecioNumericUpDown.Maximum = new decimal(new int[] {
@@ -117,27 +125,29 @@
             0,
             0});
             this.PrecioNumericUpDown.Name = "PrecioNumericUpDown";
-            this.PrecioNumericUpDown.Size = new System.Drawing.Size(145, 20);
+            this.PrecioNumericUpDown.Size = new System.Drawing.Size(153, 20);
             this.PrecioNumericUpDown.TabIndex = 7;
             // 
-            // button1
+            // BuscarButton
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::ConsultorioOdontologico.Properties.Resources.icons8_google_web_search_100_1_;
-            this.button1.Location = new System.Drawing.Point(224, -2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(53, 42);
-            this.button1.TabIndex = 35;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BuscarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuscarButton.FlatAppearance.BorderSize = 0;
+            this.BuscarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuscarButton.Image = global::ConsultorioOdontologico.Properties.Resources.icons8_google_web_search_100_1_;
+            this.BuscarButton.Location = new System.Drawing.Point(232, -2);
+            this.BuscarButton.Name = "BuscarButton";
+            this.BuscarButton.Size = new System.Drawing.Size(53, 42);
+            this.BuscarButton.TabIndex = 35;
+            this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // EliminarButton
             // 
+            this.EliminarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.EliminarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EliminarButton.Image = global::ConsultorioOdontologico.Properties.Resources.BotonEliminar1;
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.EliminarButton.Location = new System.Drawing.Point(200, 168);
+            this.EliminarButton.Location = new System.Drawing.Point(208, 168);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(77, 62);
             this.EliminarButton.TabIndex = 38;
@@ -148,6 +158,7 @@
             // 
             // GuardarButton
             // 
+            this.GuardarButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.GuardarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GuardarButton.Image = global::ConsultorioOdontologico.Properties.Resources.BotonGuardar;
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -162,6 +173,7 @@
             // 
             // NuevoButton
             // 
+            this.NuevoButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.NuevoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NuevoButton.Image = global::ConsultorioOdontologico.Properties.Resources.CrearNuevo1;
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -180,6 +192,7 @@
             // 
             // UsuarioLabel
             // 
+            this.UsuarioLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.UsuarioLabel.AutoSize = true;
             this.UsuarioLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsuarioLabel.Location = new System.Drawing.Point(186, 249);
@@ -190,6 +203,7 @@
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(110, 248);
@@ -202,13 +216,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(321, 273);
+            this.ClientSize = new System.Drawing.Size(300, 277);
             this.Controls.Add(this.UsuarioLabel);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.NuevoButton);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.PrecioNumericUpDown);
             this.Controls.Add(this.DescripcionTextBox);
             this.Controls.Add(this.NombreTextBox);
@@ -238,7 +252,7 @@
         private System.Windows.Forms.TextBox NombreTextBox;
         private System.Windows.Forms.TextBox DescripcionTextBox;
         private System.Windows.Forms.NumericUpDown PrecioNumericUpDown;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BuscarButton;
         private System.Windows.Forms.Button EliminarButton;
         private System.Windows.Forms.Button GuardarButton;
         private System.Windows.Forms.Button NuevoButton;

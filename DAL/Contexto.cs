@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ConsultorioOdontologico.DAL
 {
-    class Contexto : DbContext
+    public class Contexto : DbContext
     {
         public DbSet<Pacientes> Paciente { get; set; }
         public DbSet<TiposProcedimientos> TipoProcedimiento { get; set; }

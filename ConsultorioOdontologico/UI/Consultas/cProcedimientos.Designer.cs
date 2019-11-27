@@ -43,6 +43,7 @@
             // 
             // CriterioTextBox
             // 
+            this.CriterioTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.CriterioTextBox.Location = new System.Drawing.Point(360, 22);
             this.CriterioTextBox.Name = "CriterioTextBox";
             this.CriterioTextBox.Size = new System.Drawing.Size(205, 20);
@@ -50,6 +51,7 @@
             // 
             // FiltrarComboBox
             // 
+            this.FiltrarComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FiltrarComboBox.FormattingEnabled = true;
             this.FiltrarComboBox.Items.AddRange(new object[] {
             "Todo",
@@ -67,6 +69,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(357, 6);
             this.label4.Name = "label4";
@@ -76,6 +79,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(9, 6);
             this.label3.Name = "label3";
@@ -86,13 +90,14 @@
             // ConsultaDataGridView
             // 
             this.ConsultaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ConsultaDataGridView.Location = new System.Drawing.Point(3, 67);
+            this.ConsultaDataGridView.Location = new System.Drawing.Point(3, 51);
             this.ConsultaDataGridView.Name = "ConsultaDataGridView";
             this.ConsultaDataGridView.Size = new System.Drawing.Size(652, 363);
             this.ConsultaDataGridView.TabIndex = 34;
             // 
             // PacientesComboBox
             // 
+            this.PacientesComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PacientesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PacientesComboBox.FormattingEnabled = true;
             this.PacientesComboBox.Location = new System.Drawing.Point(363, 22);
@@ -103,6 +108,7 @@
             // 
             // TipoProcedimientoComboBox
             // 
+            this.TipoProcedimientoComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.TipoProcedimientoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.TipoProcedimientoComboBox.FormattingEnabled = true;
             this.TipoProcedimientoComboBox.Location = new System.Drawing.Point(363, 22);
@@ -113,11 +119,12 @@
             // 
             // ImprimirButton
             // 
+            this.ImprimirButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ImprimirButton.Image = global::ConsultorioOdontologico.Properties.Resources.icons8_imprimir_50;
             this.ImprimirButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ImprimirButton.Location = new System.Drawing.Point(580, 436);
+            this.ImprimirButton.Location = new System.Drawing.Point(571, 420);
             this.ImprimirButton.Name = "ImprimirButton";
-            this.ImprimirButton.Size = new System.Drawing.Size(75, 60);
+            this.ImprimirButton.Size = new System.Drawing.Size(84, 61);
             this.ImprimirButton.TabIndex = 48;
             this.ImprimirButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.ImprimirButton.UseVisualStyleBackColor = true;
@@ -125,6 +132,7 @@
             // 
             // ConsultarButton
             // 
+            this.ConsultarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ConsultarButton.Image = ((System.Drawing.Image)(resources.GetObject("ConsultarButton.Image")));
             this.ConsultarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ConsultarButton.Location = new System.Drawing.Point(571, 17);
@@ -140,7 +148,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(660, 505);
+            this.ClientSize = new System.Drawing.Size(659, 484);
             this.Controls.Add(this.ImprimirButton);
             this.Controls.Add(this.TipoProcedimientoComboBox);
             this.Controls.Add(this.PacientesComboBox);

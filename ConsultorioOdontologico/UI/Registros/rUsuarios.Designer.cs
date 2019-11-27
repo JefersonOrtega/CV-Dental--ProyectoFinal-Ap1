@@ -95,6 +95,8 @@
             // 
             // UsuarioIdNumericUpDown
             // 
+            this.UsuarioIdNumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.UsuarioIdNumericUpDown.Location = new System.Drawing.Point(91, 24);
             this.UsuarioIdNumericUpDown.Name = "UsuarioIdNumericUpDown";
             this.UsuarioIdNumericUpDown.Size = new System.Drawing.Size(147, 20);
@@ -102,6 +104,8 @@
             // 
             // NombreTextBox
             // 
+            this.NombreTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.NombreTextBox.Location = new System.Drawing.Point(91, 64);
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(191, 20);
@@ -109,6 +113,8 @@
             // 
             // TipoComboBox
             // 
+            this.TipoComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TipoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.TipoComboBox.FormattingEnabled = true;
             this.TipoComboBox.Items.AddRange(new object[] {
@@ -122,6 +128,8 @@
             // 
             // UsuarioTextBox
             // 
+            this.UsuarioTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.UsuarioTextBox.Location = new System.Drawing.Point(91, 120);
             this.UsuarioTextBox.Name = "UsuarioTextBox";
             this.UsuarioTextBox.Size = new System.Drawing.Size(191, 20);
@@ -129,6 +137,8 @@
             // 
             // ContrasenaTextBox
             // 
+            this.ContrasenaTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ContrasenaTextBox.Location = new System.Drawing.Point(91, 147);
             this.ContrasenaTextBox.Name = "ContrasenaTextBox";
             this.ContrasenaTextBox.Size = new System.Drawing.Size(190, 20);
@@ -136,6 +146,7 @@
             // 
             // EliminarButton
             // 
+            this.EliminarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.EliminarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EliminarButton.Image = global::ConsultorioOdontologico.Properties.Resources.BotonEliminar1;
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -150,6 +161,7 @@
             // 
             // GuardarButton
             // 
+            this.GuardarButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.GuardarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GuardarButton.Image = global::ConsultorioOdontologico.Properties.Resources.BotonGuardar;
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -164,6 +176,7 @@
             // 
             // NuevoButton
             // 
+            this.NuevoButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.NuevoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NuevoButton.Image = global::ConsultorioOdontologico.Properties.Resources.CrearNuevo1;
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -178,6 +191,7 @@
             // 
             // BuscarCitasButton
             // 
+            this.BuscarCitasButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BuscarCitasButton.FlatAppearance.BorderSize = 0;
             this.BuscarCitasButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BuscarCitasButton.Image = global::ConsultorioOdontologico.Properties.Resources.icons8_google_web_search_100_1_;
@@ -196,7 +210,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(320, 291);
+            this.ClientSize = new System.Drawing.Size(306, 291);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.NuevoButton);

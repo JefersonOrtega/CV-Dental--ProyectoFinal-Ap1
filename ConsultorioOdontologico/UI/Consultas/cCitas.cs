@@ -110,6 +110,11 @@ namespace ConsultorioOdontologico.UI.Consultas
 
         private void ImprimirButton_Click(object sender, EventArgs e)
         {
+          
+        }
+
+        private void ImprimirButton_Click_1(object sender, EventArgs e)
+        {
             if (ListaCitas.Count == 0)
             {
                 MessageBox.Show("No hay datos para imprimir");

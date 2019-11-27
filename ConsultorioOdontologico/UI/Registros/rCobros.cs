@@ -1,5 +1,6 @@
 ﻿using ConsultorioOdontologico.BLL;
 using ConsultorioOdontologico.Entidades;
+using ConsultorioOdontologico.UI.Reportes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace ConsultorioOdontologico.UI.Registros
 {
     public partial class rCobros : Form
     {
+        private List<Cobros> ListaCobros;
         public rCobros()
         {
             InitializeComponent();
@@ -179,8 +181,24 @@ namespace ConsultorioOdontologico.UI.Registros
             }
             if (paso)
             {
-                Limpiar();
                 MessageBox.Show("Guardado!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                ///
+                /// Imprimir reporte
+                ///
+                BLL.RepositorioBase<Cobros> repositorioBase = new RepositorioBase<Cobros>();
+                ListaCobros = repositorioBase.GetList(p=> p.CobroId == cobro.CobroId);
+                if (ListaCobros.Count == 0)
+                {
+                    MessageBox.Show("No hay datos para imprimir");
+                    return;
+                }
+                ReciboCobroReportViewer reciboCobroReportViewer = new ReciboCobroReportViewer(ListaCobros);
+                reciboCobroReportViewer.ShowDialog();
+                ///
+
+                Limpiar();
+                
             }
             else
                 MessageBox.Show("No fue posible guardar!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -256,6 +274,11 @@ namespace ConsultorioOdontologico.UI.Registros
             {
                 MessageBox.Show("Registro No encontrado");
             }
+        }
+
+        private void ImprimirButton_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

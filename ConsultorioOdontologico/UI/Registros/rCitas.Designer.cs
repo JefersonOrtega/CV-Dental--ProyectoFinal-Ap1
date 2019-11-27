@@ -55,7 +55,6 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(14, 21);
             this.label1.Name = "label1";
@@ -65,7 +64,6 @@
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(14, 96);
             this.label2.Name = "label2";
@@ -75,7 +73,6 @@
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(13, 123);
             this.label3.Name = "label3";
@@ -85,7 +82,6 @@
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(14, 62);
             this.label4.Name = "label4";
@@ -95,7 +91,6 @@
             // 
             // label6
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(14, 146);
             this.label6.Name = "label6";
@@ -105,7 +100,6 @@
             // 
             // label7
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(14, 182);
             this.label7.Name = "label7";
@@ -115,6 +109,8 @@
             // 
             // CitaIdNumericUpDown
             // 
+            this.CitaIdNumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CitaIdNumericUpDown.Location = new System.Drawing.Point(92, 19);
             this.CitaIdNumericUpDown.Name = "CitaIdNumericUpDown";
             this.CitaIdNumericUpDown.Size = new System.Drawing.Size(132, 20);
@@ -123,8 +119,7 @@
             // 
             // FechaDateTimePicker
             // 
-            this.FechaDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.FechaDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FechaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.FechaDateTimePicker.Location = new System.Drawing.Point(89, 91);
@@ -134,8 +129,7 @@
             // 
             // HoraDateTimePicker
             // 
-            this.HoraDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.HoraDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.HoraDateTimePicker.CustomFormat = "hh:mm tt";
             this.HoraDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -146,8 +140,7 @@
             // 
             // ObservacionTextBox
             // 
-            this.ObservacionTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.ObservacionTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ObservacionTextBox.Location = new System.Drawing.Point(89, 170);
             this.ObservacionTextBox.Multiline = true;
@@ -157,8 +150,7 @@
             // 
             // EstadoComboBox
             // 
-            this.EstadoComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.EstadoComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.EstadoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.EstadoComboBox.FormattingEnabled = true;
@@ -174,6 +166,8 @@
             // 
             // PacienteComboBox
             // 
+            this.PacienteComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PacienteComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PacienteComboBox.FormattingEnabled = true;
             this.PacienteComboBox.Location = new System.Drawing.Point(92, 58);
@@ -187,7 +181,7 @@
             // 
             // AgregarPacienteButton
             // 
-            this.AgregarPacienteButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.AgregarPacienteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.AgregarPacienteButton.FlatAppearance.BorderSize = 0;
             this.AgregarPacienteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AgregarPacienteButton.Image = global::ConsultorioOdontologico.Properties.Resources.icons8_añadir_48;
@@ -215,6 +209,7 @@
             // 
             // GuardarButton
             // 
+            this.GuardarButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.GuardarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GuardarButton.Image = global::ConsultorioOdontologico.Properties.Resources.BotonGuardar;
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -229,6 +224,7 @@
             // 
             // NuevoButton
             // 
+            this.NuevoButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.NuevoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NuevoButton.Image = global::ConsultorioOdontologico.Properties.Resources.CrearNuevo1;
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -243,7 +239,7 @@
             // 
             // BuscarCitasButton
             // 
-            this.BuscarCitasButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BuscarCitasButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BuscarCitasButton.FlatAppearance.BorderSize = 0;
             this.BuscarCitasButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BuscarCitasButton.Image = global::ConsultorioOdontologico.Properties.Resources.icons8_google_web_search_100_1_;
@@ -256,6 +252,7 @@
             // 
             // UsuarioLabel
             // 
+            this.UsuarioLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.UsuarioLabel.AutoSize = true;
             this.UsuarioLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsuarioLabel.Location = new System.Drawing.Point(176, 318);
@@ -266,6 +263,7 @@
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(100, 317);

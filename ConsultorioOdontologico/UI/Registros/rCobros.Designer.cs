@@ -35,11 +35,6 @@
             this.CobroIdnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.AbonoNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            this.EliminarButton = new System.Windows.Forms.Button();
-            this.GuardarButton = new System.Windows.Forms.Button();
-            this.NuevoButton = new System.Windows.Forms.Button();
-            this.BuscarPacienteButton = new System.Windows.Forms.Button();
-            this.BuscarButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.MontoTextBox = new System.Windows.Forms.TextBox();
@@ -56,6 +51,11 @@
             this.FechaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.UsuarioLabel = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.EliminarButton = new System.Windows.Forms.Button();
+            this.GuardarButton = new System.Windows.Forms.Button();
+            this.NuevoButton = new System.Windows.Forms.Button();
+            this.BuscarPacienteButton = new System.Windows.Forms.Button();
+            this.BuscarButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ProcedimientoIdNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CobroIdnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AbonoNumericUpDown)).BeginInit();
@@ -83,6 +83,8 @@
             // 
             // ProcedimientoIdNumericUpDown
             // 
+            this.ProcedimientoIdNumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ProcedimientoIdNumericUpDown.Location = new System.Drawing.Point(123, 48);
             this.ProcedimientoIdNumericUpDown.Name = "ProcedimientoIdNumericUpDown";
             this.ProcedimientoIdNumericUpDown.Size = new System.Drawing.Size(392, 20);
@@ -90,6 +92,8 @@
             // 
             // CobroIdnumericUpDown
             // 
+            this.CobroIdnumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CobroIdnumericUpDown.Location = new System.Drawing.Point(123, 12);
             this.CobroIdnumericUpDown.Name = "CobroIdnumericUpDown";
             this.CobroIdnumericUpDown.Size = new System.Drawing.Size(392, 20);
@@ -97,6 +101,8 @@
             // 
             // AbonoNumericUpDown
             // 
+            this.AbonoNumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.AbonoNumericUpDown.DecimalPlaces = 2;
             this.AbonoNumericUpDown.Location = new System.Drawing.Point(123, 176);
             this.AbonoNumericUpDown.Maximum = new decimal(new int[] {
@@ -111,71 +117,6 @@
             // MyErrorProvider
             // 
             this.MyErrorProvider.ContainerControl = this;
-            // 
-            // EliminarButton
-            // 
-            this.EliminarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EliminarButton.Image = global::ConsultorioOdontologico.Properties.Resources.BotonEliminar1;
-            this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.EliminarButton.Location = new System.Drawing.Point(481, 479);
-            this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(77, 62);
-            this.EliminarButton.TabIndex = 47;
-            this.EliminarButton.Text = "Eliminar";
-            this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.EliminarButton.UseVisualStyleBackColor = true;
-            // 
-            // GuardarButton
-            // 
-            this.GuardarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GuardarButton.Image = global::ConsultorioOdontologico.Properties.Resources.BotonGuardar;
-            this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.GuardarButton.Location = new System.Drawing.Point(225, 479);
-            this.GuardarButton.Name = "GuardarButton";
-            this.GuardarButton.Size = new System.Drawing.Size(81, 62);
-            this.GuardarButton.TabIndex = 46;
-            this.GuardarButton.Text = "Guardar";
-            this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.GuardarButton.UseVisualStyleBackColor = true;
-            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
-            // 
-            // NuevoButton
-            // 
-            this.NuevoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NuevoButton.Image = global::ConsultorioOdontologico.Properties.Resources.CrearNuevo1;
-            this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.NuevoButton.Location = new System.Drawing.Point(13, 480);
-            this.NuevoButton.Name = "NuevoButton";
-            this.NuevoButton.Size = new System.Drawing.Size(76, 62);
-            this.NuevoButton.TabIndex = 45;
-            this.NuevoButton.Text = "Nuevo";
-            this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.NuevoButton.UseVisualStyleBackColor = true;
-            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
-            // 
-            // BuscarPacienteButton
-            // 
-            this.BuscarPacienteButton.FlatAppearance.BorderSize = 0;
-            this.BuscarPacienteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BuscarPacienteButton.Image = global::ConsultorioOdontologico.Properties.Resources.icons8_google_web_search_100_1_;
-            this.BuscarPacienteButton.Location = new System.Drawing.Point(523, 39);
-            this.BuscarPacienteButton.Name = "BuscarPacienteButton";
-            this.BuscarPacienteButton.Size = new System.Drawing.Size(37, 35);
-            this.BuscarPacienteButton.TabIndex = 43;
-            this.BuscarPacienteButton.UseVisualStyleBackColor = true;
-            this.BuscarPacienteButton.Click += new System.EventHandler(this.BuscarPacienteButton_Click);
-            // 
-            // BuscarButton
-            // 
-            this.BuscarButton.FlatAppearance.BorderSize = 0;
-            this.BuscarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BuscarButton.Image = global::ConsultorioOdontologico.Properties.Resources.icons8_google_web_search_100_1_;
-            this.BuscarButton.Location = new System.Drawing.Point(521, 2);
-            this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(37, 35);
-            this.BuscarButton.TabIndex = 42;
-            this.BuscarButton.UseVisualStyleBackColor = true;
-            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // label2
             // 
@@ -197,6 +138,8 @@
             // 
             // MontoTextBox
             // 
+            this.MontoTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.MontoTextBox.Location = new System.Drawing.Point(123, 141);
             this.MontoTextBox.Name = "MontoTextBox";
             this.MontoTextBox.ReadOnly = true;
@@ -214,6 +157,8 @@
             // 
             // PacientetextBox
             // 
+            this.PacientetextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PacientetextBox.Location = new System.Drawing.Point(123, 108);
             this.PacientetextBox.Name = "PacientetextBox";
             this.PacientetextBox.Size = new System.Drawing.Size(435, 20);
@@ -248,6 +193,9 @@
             // PorCobrarDataGridView
             // 
             this.PorCobrarDataGridView.AllowUserToAddRows = false;
+            this.PorCobrarDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PorCobrarDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PorCobrarDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CPaciente,
@@ -284,14 +232,17 @@
             // 
             // FechaDateTimePicker
             // 
+            this.FechaDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.FechaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.FechaDateTimePicker.Location = new System.Drawing.Point(123, 79);
             this.FechaDateTimePicker.Name = "FechaDateTimePicker";
-            this.FechaDateTimePicker.Size = new System.Drawing.Size(437, 20);
+            this.FechaDateTimePicker.Size = new System.Drawing.Size(435, 20);
             this.FechaDateTimePicker.TabIndex = 54;
             // 
             // UsuarioLabel
             // 
+            this.UsuarioLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.UsuarioLabel.AutoSize = true;
             this.UsuarioLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsuarioLabel.Location = new System.Drawing.Point(298, 565);
@@ -302,6 +253,7 @@
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(222, 564);
@@ -309,6 +261,76 @@
             this.label12.Size = new System.Drawing.Size(70, 16);
             this.label12.TabIndex = 55;
             this.label12.Text = "Usuario: ";
+            // 
+            // EliminarButton
+            // 
+            this.EliminarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.EliminarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EliminarButton.Image = global::ConsultorioOdontologico.Properties.Resources.BotonEliminar1;
+            this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.EliminarButton.Location = new System.Drawing.Point(481, 479);
+            this.EliminarButton.Name = "EliminarButton";
+            this.EliminarButton.Size = new System.Drawing.Size(77, 69);
+            this.EliminarButton.TabIndex = 47;
+            this.EliminarButton.Text = "Eliminar";
+            this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.EliminarButton.UseVisualStyleBackColor = true;
+            // 
+            // GuardarButton
+            // 
+            this.GuardarButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.GuardarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GuardarButton.Image = global::ConsultorioOdontologico.Properties.Resources.BotonGuardar;
+            this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.GuardarButton.Location = new System.Drawing.Point(233, 480);
+            this.GuardarButton.Name = "GuardarButton";
+            this.GuardarButton.Size = new System.Drawing.Size(81, 68);
+            this.GuardarButton.TabIndex = 46;
+            this.GuardarButton.Text = "Guardar";
+            this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
+            // 
+            // NuevoButton
+            // 
+            this.NuevoButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.NuevoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NuevoButton.Image = global::ConsultorioOdontologico.Properties.Resources.CrearNuevo1;
+            this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.NuevoButton.Location = new System.Drawing.Point(12, 479);
+            this.NuevoButton.Name = "NuevoButton";
+            this.NuevoButton.Size = new System.Drawing.Size(76, 68);
+            this.NuevoButton.TabIndex = 45;
+            this.NuevoButton.Text = "Nuevo";
+            this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.NuevoButton.UseVisualStyleBackColor = true;
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
+            // 
+            // BuscarPacienteButton
+            // 
+            this.BuscarPacienteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuscarPacienteButton.FlatAppearance.BorderSize = 0;
+            this.BuscarPacienteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuscarPacienteButton.Image = global::ConsultorioOdontologico.Properties.Resources.icons8_google_web_search_100_1_;
+            this.BuscarPacienteButton.Location = new System.Drawing.Point(523, 39);
+            this.BuscarPacienteButton.Name = "BuscarPacienteButton";
+            this.BuscarPacienteButton.Size = new System.Drawing.Size(37, 35);
+            this.BuscarPacienteButton.TabIndex = 43;
+            this.BuscarPacienteButton.UseVisualStyleBackColor = true;
+            this.BuscarPacienteButton.Click += new System.EventHandler(this.BuscarPacienteButton_Click);
+            // 
+            // BuscarButton
+            // 
+            this.BuscarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuscarButton.FlatAppearance.BorderSize = 0;
+            this.BuscarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuscarButton.Image = global::ConsultorioOdontologico.Properties.Resources.icons8_google_web_search_100_1_;
+            this.BuscarButton.Location = new System.Drawing.Point(521, 2);
+            this.BuscarButton.Name = "BuscarButton";
+            this.BuscarButton.Size = new System.Drawing.Size(37, 35);
+            this.BuscarButton.TabIndex = 42;
+            this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // rCobros
             // 

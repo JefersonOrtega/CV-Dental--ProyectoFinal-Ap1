@@ -67,7 +67,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 24);
+            this.label1.Location = new System.Drawing.Point(27, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 0;
@@ -76,7 +76,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 64);
+            this.label2.Location = new System.Drawing.Point(27, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 1;
@@ -85,7 +85,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 91);
+            this.label3.Location = new System.Drawing.Point(27, 91);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 13);
             this.label3.TabIndex = 2;
@@ -94,7 +94,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 117);
+            this.label4.Location = new System.Drawing.Point(27, 117);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 3;
@@ -103,7 +103,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 144);
+            this.label5.Location = new System.Drawing.Point(27, 144);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 13);
             this.label5.TabIndex = 4;
@@ -112,7 +112,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 196);
+            this.label6.Location = new System.Drawing.Point(27, 196);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(32, 13);
             this.label6.TabIndex = 5;
@@ -121,7 +121,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 223);
+            this.label7.Location = new System.Drawing.Point(27, 223);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 13);
             this.label7.TabIndex = 6;
@@ -130,7 +130,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 170);
+            this.label8.Location = new System.Drawing.Point(27, 170);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(39, 13);
             this.label8.TabIndex = 7;
@@ -139,7 +139,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(13, 254);
+            this.label9.Location = new System.Drawing.Point(27, 254);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(108, 13);
             this.label9.TabIndex = 8;
@@ -148,7 +148,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(13, 307);
+            this.label10.Location = new System.Drawing.Point(27, 307);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(94, 13);
             this.label10.TabIndex = 9;
@@ -157,7 +157,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(13, 331);
+            this.label11.Location = new System.Drawing.Point(27, 331);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(44, 13);
             this.label11.TabIndex = 10;
@@ -165,9 +165,10 @@
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(99, 466);
+            this.label12.Location = new System.Drawing.Point(113, 466);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(70, 16);
             this.label12.TabIndex = 11;
@@ -175,9 +176,10 @@
             // 
             // UsuarioLabel
             // 
+            this.UsuarioLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.UsuarioLabel.AutoSize = true;
             this.UsuarioLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsuarioLabel.Location = new System.Drawing.Point(175, 467);
+            this.UsuarioLabel.Location = new System.Drawing.Point(189, 467);
             this.UsuarioLabel.Name = "UsuarioLabel";
             this.UsuarioLabel.Size = new System.Drawing.Size(16, 15);
             this.UsuarioLabel.TabIndex = 12;
@@ -185,35 +187,45 @@
             // 
             // PacienteIdNumericUpDown
             // 
-            this.PacienteIdNumericUpDown.Location = new System.Drawing.Point(129, 24);
+            this.PacienteIdNumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PacienteIdNumericUpDown.Location = new System.Drawing.Point(143, 24);
             this.PacienteIdNumericUpDown.Name = "PacienteIdNumericUpDown";
             this.PacienteIdNumericUpDown.Size = new System.Drawing.Size(130, 20);
             this.PacienteIdNumericUpDown.TabIndex = 13;
             // 
             // NombresTextBox
             // 
-            this.NombresTextBox.Location = new System.Drawing.Point(129, 61);
+            this.NombresTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.NombresTextBox.Location = new System.Drawing.Point(143, 61);
             this.NombresTextBox.Name = "NombresTextBox";
             this.NombresTextBox.Size = new System.Drawing.Size(187, 20);
             this.NombresTextBox.TabIndex = 14;
             // 
             // ApellidosTextBox
             // 
-            this.ApellidosTextBox.Location = new System.Drawing.Point(129, 88);
+            this.ApellidosTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ApellidosTextBox.Location = new System.Drawing.Point(143, 88);
             this.ApellidosTextBox.Name = "ApellidosTextBox";
             this.ApellidosTextBox.Size = new System.Drawing.Size(187, 20);
             this.ApellidosTextBox.TabIndex = 15;
             // 
             // DireccionTextBox
             // 
-            this.DireccionTextBox.Location = new System.Drawing.Point(129, 114);
+            this.DireccionTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DireccionTextBox.Location = new System.Drawing.Point(143, 114);
             this.DireccionTextBox.Name = "DireccionTextBox";
             this.DireccionTextBox.Size = new System.Drawing.Size(187, 20);
             this.DireccionTextBox.TabIndex = 16;
             // 
             // TelefonoMaskedTextBox
             // 
-            this.TelefonoMaskedTextBox.Location = new System.Drawing.Point(129, 141);
+            this.TelefonoMaskedTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TelefonoMaskedTextBox.Location = new System.Drawing.Point(143, 141);
             this.TelefonoMaskedTextBox.Mask = "000-000-0000";
             this.TelefonoMaskedTextBox.Name = "TelefonoMaskedTextBox";
             this.TelefonoMaskedTextBox.Size = new System.Drawing.Size(187, 20);
@@ -222,7 +234,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(13, 278);
+            this.label13.Location = new System.Drawing.Point(27, 278);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(79, 13);
             this.label13.TabIndex = 18;
@@ -230,7 +242,9 @@
             // 
             // CelularMaskedTextBox
             // 
-            this.CelularMaskedTextBox.Location = new System.Drawing.Point(129, 167);
+            this.CelularMaskedTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CelularMaskedTextBox.Location = new System.Drawing.Point(143, 167);
             this.CelularMaskedTextBox.Mask = "000-000-0000";
             this.CelularMaskedTextBox.Name = "CelularMaskedTextBox";
             this.CelularMaskedTextBox.Size = new System.Drawing.Size(187, 20);
@@ -238,59 +252,72 @@
             // 
             // EmailTextBox
             // 
-            this.EmailTextBox.Location = new System.Drawing.Point(129, 193);
+            this.EmailTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.EmailTextBox.Location = new System.Drawing.Point(143, 193);
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(187, 20);
             this.EmailTextBox.TabIndex = 20;
             // 
             // GeneroComboBox
             // 
+            this.GeneroComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GeneroComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.GeneroComboBox.FormattingEnabled = true;
             this.GeneroComboBox.Items.AddRange(new object[] {
             "Femenino",
             "Masculino"});
-            this.GeneroComboBox.Location = new System.Drawing.Point(129, 220);
+            this.GeneroComboBox.Location = new System.Drawing.Point(143, 220);
             this.GeneroComboBox.Name = "GeneroComboBox";
             this.GeneroComboBox.Size = new System.Drawing.Size(187, 21);
             this.GeneroComboBox.TabIndex = 21;
             // 
             // FechaNacimientoDateTimePicker
             // 
+            this.FechaNacimientoDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.FechaNacimientoDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.FechaNacimientoDateTimePicker.Location = new System.Drawing.Point(129, 248);
+            this.FechaNacimientoDateTimePicker.Location = new System.Drawing.Point(143, 248);
             this.FechaNacimientoDateTimePicker.Name = "FechaNacimientoDateTimePicker";
             this.FechaNacimientoDateTimePicker.Size = new System.Drawing.Size(187, 20);
             this.FechaNacimientoDateTimePicker.TabIndex = 22;
             // 
             // SeguroMedicoTextBox
             // 
-            this.SeguroMedicoTextBox.Location = new System.Drawing.Point(129, 275);
+            this.SeguroMedicoTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SeguroMedicoTextBox.Location = new System.Drawing.Point(143, 275);
             this.SeguroMedicoTextBox.Name = "SeguroMedicoTextBox";
             this.SeguroMedicoTextBox.Size = new System.Drawing.Size(187, 20);
             this.SeguroMedicoTextBox.TabIndex = 23;
             // 
             // FechaRegistoDateTimePicker
             // 
+            this.FechaRegistoDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.FechaRegistoDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.FechaRegistoDateTimePicker.Location = new System.Drawing.Point(129, 301);
+            this.FechaRegistoDateTimePicker.Location = new System.Drawing.Point(143, 301);
             this.FechaRegistoDateTimePicker.Name = "FechaRegistoDateTimePicker";
             this.FechaRegistoDateTimePicker.Size = new System.Drawing.Size(187, 20);
             this.FechaRegistoDateTimePicker.TabIndex = 24;
             // 
             // AlergiasTextBox
             // 
-            this.AlergiasTextBox.Location = new System.Drawing.Point(129, 328);
+            this.AlergiasTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AlergiasTextBox.Location = new System.Drawing.Point(143, 328);
             this.AlergiasTextBox.Name = "AlergiasTextBox";
             this.AlergiasTextBox.Size = new System.Drawing.Size(187, 20);
             this.AlergiasTextBox.TabIndex = 25;
             // 
             // EliminarButton
             // 
+            this.EliminarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.EliminarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EliminarButton.Image = global::ConsultorioOdontologico.Properties.Resources.BotonEliminar1;
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.EliminarButton.Location = new System.Drawing.Point(239, 380);
+            this.EliminarButton.Location = new System.Drawing.Point(253, 380);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(77, 62);
             this.EliminarButton.TabIndex = 31;
@@ -301,10 +328,11 @@
             // 
             // GuardarButton
             // 
+            this.GuardarButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.GuardarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GuardarButton.Image = global::ConsultorioOdontologico.Properties.Resources.BotonGuardar;
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.GuardarButton.Location = new System.Drawing.Point(129, 380);
+            this.GuardarButton.Location = new System.Drawing.Point(143, 380);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(81, 62);
             this.GuardarButton.TabIndex = 30;
@@ -315,10 +343,11 @@
             // 
             // NuevoButton
             // 
+            this.NuevoButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.NuevoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NuevoButton.Image = global::ConsultorioOdontologico.Properties.Resources.CrearNuevo1;
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.NuevoButton.Location = new System.Drawing.Point(16, 380);
+            this.NuevoButton.Location = new System.Drawing.Point(30, 380);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(76, 62);
             this.NuevoButton.TabIndex = 27;
@@ -329,8 +358,9 @@
             // 
             // BuscarButton
             // 
+            this.BuscarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BuscarButton.Image = global::ConsultorioOdontologico.Properties.Resources.icons8_encuentra_hombre_usuario_30;
-            this.BuscarButton.Location = new System.Drawing.Point(276, 16);
+            this.BuscarButton.Location = new System.Drawing.Point(290, 16);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(40, 33);
             this.BuscarButton.TabIndex = 26;
@@ -345,7 +375,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(385, 484);
+            this.ClientSize = new System.Drawing.Size(352, 484);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.NuevoButton);

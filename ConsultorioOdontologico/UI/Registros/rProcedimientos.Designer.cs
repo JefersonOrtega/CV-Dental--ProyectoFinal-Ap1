@@ -42,6 +42,7 @@
             this.CitaIdNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.RemoverFilaButton = new System.Windows.Forms.Button();
             this.DetalleDataGridView = new System.Windows.Forms.DataGridView();
             this.CProcedimientoId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CCitaId = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,7 +61,6 @@
             this.EliminarButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
-            this.RemoverFilaButton = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CitaIdNumericUpDown)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -71,6 +71,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.EstadoComboBox);
             this.groupBox2.Controls.Add(this.TipoProcedimientoComboBox);
             this.groupBox2.Controls.Add(this.MontoTextBox);
@@ -86,9 +88,12 @@
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cumplimiento Cita";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // EstadoComboBox
             // 
+            this.EstadoComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.EstadoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.EstadoComboBox.FormattingEnabled = true;
             this.EstadoComboBox.Items.AddRange(new object[] {
@@ -101,6 +106,8 @@
             // 
             // TipoProcedimientoComboBox
             // 
+            this.TipoProcedimientoComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TipoProcedimientoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.TipoProcedimientoComboBox.FormattingEnabled = true;
             this.TipoProcedimientoComboBox.Location = new System.Drawing.Point(83, 27);
@@ -111,6 +118,8 @@
             // 
             // MontoTextBox
             // 
+            this.MontoTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.MontoTextBox.Location = new System.Drawing.Point(82, 94);
             this.MontoTextBox.Name = "MontoTextBox";
             this.MontoTextBox.ReadOnly = true;
@@ -128,6 +137,7 @@
             // 
             // AgregarButton
             // 
+            this.AgregarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.AgregarButton.Location = new System.Drawing.Point(341, 92);
             this.AgregarButton.Name = "AgregarButton";
             this.AgregarButton.Size = new System.Drawing.Size(41, 22);
@@ -147,7 +157,8 @@
             // 
             // DescripcionTextBox
             // 
-            this.DescripcionTextBox.Location = new System.Drawing.Point(469, 17);
+            this.DescripcionTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.DescripcionTextBox.Location = new System.Drawing.Point(474, 25);
             this.DescripcionTextBox.Multiline = true;
             this.DescripcionTextBox.Name = "DescripcionTextBox";
             this.DescripcionTextBox.Size = new System.Drawing.Size(182, 53);
@@ -155,6 +166,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(392, 27);
             this.label8.Name = "label8";
@@ -173,6 +185,8 @@
             // 
             // CitaIdNumericUpDown
             // 
+            this.CitaIdNumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CitaIdNumericUpDown.Location = new System.Drawing.Point(124, 53);
             this.CitaIdNumericUpDown.Name = "CitaIdNumericUpDown";
             this.CitaIdNumericUpDown.Size = new System.Drawing.Size(492, 20);
@@ -189,6 +203,9 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.RemoverFilaButton);
             this.groupBox3.Controls.Add(this.DetalleDataGridView);
             this.groupBox3.Location = new System.Drawing.Point(8, 262);
@@ -197,9 +214,28 @@
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             // 
+            // RemoverFilaButton
+            // 
+            this.RemoverFilaButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RemoverFilaButton.Image = global::ConsultorioOdontologico.Properties.Resources.iconfinder_Delete_14932791;
+            this.RemoverFilaButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RemoverFilaButton.Location = new System.Drawing.Point(7, 236);
+            this.RemoverFilaButton.Name = "RemoverFilaButton";
+            this.RemoverFilaButton.Size = new System.Drawing.Size(117, 30);
+            this.RemoverFilaButton.TabIndex = 4;
+            this.RemoverFilaButton.Text = "Remover Fila";
+            this.RemoverFilaButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RemoverFilaButton.UseVisualStyleBackColor = true;
+            this.RemoverFilaButton.Click += new System.EventHandler(this.RemoverFilaButton_Click);
+            // 
             // DetalleDataGridView
             // 
             this.DetalleDataGridView.AllowUserToAddRows = false;
+            this.DetalleDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DetalleDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DetalleDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CProcedimientoId,
@@ -252,6 +288,8 @@
             // 
             // ProcedimientoIdNumericUpDown
             // 
+            this.ProcedimientoIdNumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ProcedimientoIdNumericUpDown.Location = new System.Drawing.Point(123, 14);
             this.ProcedimientoIdNumericUpDown.Name = "ProcedimientoIdNumericUpDown";
             this.ProcedimientoIdNumericUpDown.Size = new System.Drawing.Size(493, 20);
@@ -259,6 +297,8 @@
             // 
             // PacienteComboBox
             // 
+            this.PacienteComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PacienteComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PacienteComboBox.Enabled = false;
             this.PacienteComboBox.FormattingEnabled = true;
@@ -283,6 +323,7 @@
             // 
             // UsuarioLabel
             // 
+            this.UsuarioLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.UsuarioLabel.AutoSize = true;
             this.UsuarioLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsuarioLabel.Location = new System.Drawing.Point(362, 626);
@@ -293,6 +334,7 @@
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(286, 625);
@@ -303,6 +345,7 @@
             // 
             // BuscarProcedimientoButton
             // 
+            this.BuscarProcedimientoButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BuscarProcedimientoButton.FlatAppearance.BorderSize = 0;
             this.BuscarProcedimientoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BuscarProcedimientoButton.Image = global::ConsultorioOdontologico.Properties.Resources.icons8_google_web_search_100_1_;
@@ -315,6 +358,7 @@
             // 
             // BuscarCitasButton
             // 
+            this.BuscarCitasButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BuscarCitasButton.FlatAppearance.BorderSize = 0;
             this.BuscarCitasButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BuscarCitasButton.Image = global::ConsultorioOdontologico.Properties.Resources.icons8_google_web_search_100_1_;
@@ -327,6 +371,7 @@
             // 
             // EliminarButton
             // 
+            this.EliminarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.EliminarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EliminarButton.Image = global::ConsultorioOdontologico.Properties.Resources.BotonEliminar1;
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -340,6 +385,7 @@
             // 
             // GuardarButton
             // 
+            this.GuardarButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.GuardarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GuardarButton.Image = global::ConsultorioOdontologico.Properties.Resources.BotonGuardar;
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -365,19 +411,6 @@
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.NuevoButton.UseVisualStyleBackColor = true;
             this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
-            // 
-            // RemoverFilaButton
-            // 
-            this.RemoverFilaButton.Image = global::ConsultorioOdontologico.Properties.Resources.iconfinder_Delete_14932791;
-            this.RemoverFilaButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RemoverFilaButton.Location = new System.Drawing.Point(7, 236);
-            this.RemoverFilaButton.Name = "RemoverFilaButton";
-            this.RemoverFilaButton.Size = new System.Drawing.Size(117, 30);
-            this.RemoverFilaButton.TabIndex = 4;
-            this.RemoverFilaButton.Text = "Remover Fila";
-            this.RemoverFilaButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RemoverFilaButton.UseVisualStyleBackColor = true;
-            this.RemoverFilaButton.Click += new System.EventHandler(this.RemoverFilaButton_Click);
             // 
             // rProcedimientos
             // 
