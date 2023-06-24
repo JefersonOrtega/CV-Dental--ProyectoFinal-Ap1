@@ -3,11 +3,11 @@
 
 Siguiendo las instrucciones dadas a continuación, se podrá hacer buen uso del programa, para de esta manera evitar comenter errores en su uso.
 
-La primera ventana con que se hará interaccion es con el Login.
+La primera ventana con que se hará interacción es con el Login.
 
  ![imagen](https://user-images.githubusercontent.com/54722249/69550721-e5d6c480-0f71-11ea-9fc0-2af7ebae859b.png)
 
-En este registro debemos ingresae el Usuario y la contraseña de un Usuario previamente registrados para poder acceder, en caso de no haber creado ningun usuario el Usuario será: **Adim** y la contraseña: **123**. Luego de ingresados los datos se accede pulsando el botón de Ingresar o simplemente pulsando **Enter**.
+En este registro debemos ingresar el Usuario y la contraseña de un Usuario previamente registrados para poder acceder, en caso de no haber creado ningun usuario el Usuario será: **Adim** y la contraseña: **123**. Luego de ingresados los datos se accede pulsando el botón de Ingresar o simplemente pulsando **Enter**.
 
 Luego de ingresado se pueden cambiar los datos de este usuario. Además, sólo el administrador tiene acceso a editar, crear y consultar usuarios.
 
