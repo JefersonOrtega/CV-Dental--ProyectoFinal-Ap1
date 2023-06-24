@@ -1,7 +1,7 @@
 # ProyectoFinal-Ap1
 ## Comenzando...
 
-Siguiende las instrucciones dadas a continuación, se podrá hacer buen uso del programa, para de esta manera evitar comenter errores en su uso.
+Siguiendo las instrucciones dadas a continuación, se podrá hacer buen uso del programa, para de esta manera evitar comenter errores en su uso.
 
 La primera ventana con que se hará interaccion es con el Login.
 
